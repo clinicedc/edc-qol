@@ -8,6 +8,7 @@ Django classes for Quality of Life instruments.
 Work in progress...
 
 See:
+
 * https://euroqol.org/eq-5d-instruments/eq-5d-3l-about/
 
 See also:
