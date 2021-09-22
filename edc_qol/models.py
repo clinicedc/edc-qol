@@ -14,15 +14,6 @@ class Eq5d3lModelMixin(models.Model):
         verbose_name_plural = "EuroQol EQ-5D-3L Instrument"
 
 
-# class Eq5d3l(
-#     Eq5d3lModelMixin,
-#     CrfModelMixin,
-#     edc_models.BaseUuidModel,
-# ):
-#     class Eq5d3l(Eq5d3lModelMixin.Meta, CrfModelMixin.Meta, edc_models.BaseUuidModel.Meta):
-#         pass
-
-
 class Eq5d3l(
     UniqueSubjectIdentifierFieldMixin,
     Eq5d3lModelMixin,
