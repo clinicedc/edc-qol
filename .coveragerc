@@ -1,0 +1,4 @@
+[run]
+include = edc_qol/*
+omit = edc_qol/tests/*,edc_qol/migrations/*
+branch = 1
