@@ -9,6 +9,3 @@ class TestEq5d3lModel(TestCaseMixin, TestCase):
     def test_pass(self):
         Eq5d3l()
         self.assertTrue(True)
-
-    def test_expected_to_fail(self):
-        self.assertTrue(False)
