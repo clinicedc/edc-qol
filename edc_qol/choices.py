@@ -1,38 +1,37 @@
+from .constants import (NO_PROBLEM_WALKING, SOME_PROBLEM_WALKING, CONFINED_TO_BED,
+                        NO_PROBLEM_SELF_CARE, PROBLEM_WASHING_DRESSING, UNABLE_WASH_DRESS,
+                        NO_PROBLEM_USUAL_ACTIVITIES, SOME_PROBLEM_USUAL_ACTIVITIES,
+                        UNABLE_PERFORM_USUAL_ACTIVITIES, NO_PAIN_DISCOMFORT,
+                        MODERATE_PAIN_DISCOMFORT, EXTREME_PAIN_DISCOMFORT,
+                        NOT_ANXIOUS_DEPRESSED, MODERATE_ANXIOUS_DEPRESSED,
+                        EXTREME_ANXIOUS_DEPRESSED)
+
 MOBILITY = (
-    ("no_problems_in_walking", "I have no problems in walking about"),
-    ("some_problems_in_walking", "I have some problems in walking about"),
-    ("confined_to_bed", "I am confined to bed"),
+    (NO_PROBLEM_WALKING, "I have no problems in walking about"),
+    (SOME_PROBLEM_WALKING, "I have some problems in walking about"),
+    (CONFINED_TO_BED, "I am confined to bed"),
 )
 
 SELF_CARE = (
-    ("no_problems_with_self_care", "I have no problems with self-care"),
-    (
-        "problems_washing_dressing_myself",
-        "I have some problems washing or dressing myself",
-    ),
-    ("unable_to_wash_dress_myself", "I am unable to wash or dress myself"),
+    (NO_PROBLEM_SELF_CARE, "I have no problems with self-care"),
+    (PROBLEM_WASHING_DRESSING, "I have some problems washing or dressing myself"),
+    (UNABLE_WASH_DRESS, "I am unable to wash or dress myself"),
 )
 
 USUAL_ACTIVITIES = (
-    (
-        "no_problems_performing_usual_activities",
-        "I have no problems with performing my usual activities",
-    ),
-    (
-        "some_problems_performing_usual_activities",
-        "I have some problems with performing my usual activities",
-    ),
-    ("unable_to_perform_usual_activities", "I am unable to perform my usual activities"),
+    (NO_PROBLEM_USUAL_ACTIVITIES, "I have no problems with performing my usual activities"),
+    (SOME_PROBLEM_USUAL_ACTIVITIES, "I have some problems with performing my usual activities"),
+    (UNABLE_PERFORM_USUAL_ACTIVITIES, "I am unable to perform my usual activities"),
 )
 
 PAIN_DISCOMFORT = (
-    ("no_pain_discomfort", "I have no pain or discomfort"),
-    ("moderate_pain_discomfort", "I have moderate pain or discomfort"),
-    ("extreme_pain_discomfort", "I have extreme pain or discomfort"),
+    (NO_PAIN_DISCOMFORT, "I have no pain or discomfort"),
+    (MODERATE_PAIN_DISCOMFORT, "I have moderate pain or discomfort"),
+    (EXTREME_PAIN_DISCOMFORT, "I have extreme pain or discomfort"),
 )
 
 ANXIETY_DEPRESSION = (
-    ("not_anxious_depressed", "I am not anxious or depressed"),
-    ("moderately_anxious_depressed", "I am moderately anxious or depressed"),
-    ("extremely_anxious_depressed", "I am extremely anxious or depressed"),
+    (NOT_ANXIOUS_DEPRESSED, "I am not anxious or depressed"),
+    (MODERATE_ANXIOUS_DEPRESSED, "I am moderately anxious or depressed"),
+    (EXTREME_ANXIOUS_DEPRESSED, "I am extremely anxious or depressed"),
 )
