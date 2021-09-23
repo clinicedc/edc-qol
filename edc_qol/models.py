@@ -4,6 +4,7 @@ from edc_model import models as edc_models
 from edc_model.models import HistoricalRecords
 from edc_sites.models import CurrentSiteManager, SiteModelMixin
 from edc_utils import get_utcnow
+
 from .model_mixin import Eq5d3lModelMixin
 
 

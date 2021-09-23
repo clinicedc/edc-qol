@@ -1,6 +1,12 @@
 from django.db import models
-from .choices import (MOBILITY, SELF_CARE, USUAL_ACTIVITIES, PAIN_DISCOMFORT,
-                      ANXIETY_DEPRESSION)
+
+from .choices import (
+    ANXIETY_DEPRESSION,
+    MOBILITY,
+    PAIN_DISCOMFORT,
+    SELF_CARE,
+    USUAL_ACTIVITIES,
+)
 
 
 class Eq5d3lModelMixin(models.Model):

@@ -1,10 +1,20 @@
-from .constants import (NO_PROBLEM_WALKING, SOME_PROBLEM_WALKING, CONFINED_TO_BED,
-                        NO_PROBLEM_SELF_CARE, PROBLEM_WASHING_DRESSING, UNABLE_WASH_DRESS,
-                        NO_PROBLEM_USUAL_ACTIVITIES, SOME_PROBLEM_USUAL_ACTIVITIES,
-                        UNABLE_PERFORM_USUAL_ACTIVITIES, NO_PAIN_DISCOMFORT,
-                        MODERATE_PAIN_DISCOMFORT, EXTREME_PAIN_DISCOMFORT,
-                        NOT_ANXIOUS_DEPRESSED, MODERATE_ANXIOUS_DEPRESSED,
-                        EXTREME_ANXIOUS_DEPRESSED)
+from .constants import (
+    CONFINED_TO_BED,
+    EXTREME_ANXIOUS_DEPRESSED,
+    EXTREME_PAIN_DISCOMFORT,
+    MODERATE_ANXIOUS_DEPRESSED,
+    MODERATE_PAIN_DISCOMFORT,
+    NO_PAIN_DISCOMFORT,
+    NO_PROBLEM_SELF_CARE,
+    NO_PROBLEM_USUAL_ACTIVITIES,
+    NO_PROBLEM_WALKING,
+    NOT_ANXIOUS_DEPRESSED,
+    PROBLEM_WASHING_DRESSING,
+    SOME_PROBLEM_USUAL_ACTIVITIES,
+    SOME_PROBLEM_WALKING,
+    UNABLE_PERFORM_USUAL_ACTIVITIES,
+    UNABLE_WASH_DRESS,
+)
 
 MOBILITY = (
     (NO_PROBLEM_WALKING, "I have no problems in walking about"),
@@ -20,7 +30,10 @@ SELF_CARE = (
 
 USUAL_ACTIVITIES = (
     (NO_PROBLEM_USUAL_ACTIVITIES, "I have no problems with performing my usual activities"),
-    (SOME_PROBLEM_USUAL_ACTIVITIES, "I have some problems with performing my usual activities"),
+    (
+        SOME_PROBLEM_USUAL_ACTIVITIES,
+        "I have some problems with performing my usual activities",
+    ),
     (UNABLE_PERFORM_USUAL_ACTIVITIES, "I am unable to perform my usual activities"),
 )
 

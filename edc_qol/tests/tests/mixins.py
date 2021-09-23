@@ -1,9 +1,15 @@
+from copy import deepcopy
+
 from django.test import TestCase
 from edc_utils import get_utcnow
-from copy import deepcopy
-from edc_qol.constants import (NO_PROBLEM_WALKING, NO_PROBLEM_SELF_CARE,
-                               NO_PROBLEM_USUAL_ACTIVITIES, NO_PAIN_DISCOMFORT,
-                               NOT_ANXIOUS_DEPRESSED)
+
+from edc_qol.constants import (
+    NO_PAIN_DISCOMFORT,
+    NO_PROBLEM_SELF_CARE,
+    NO_PROBLEM_USUAL_ACTIVITIES,
+    NO_PROBLEM_WALKING,
+    NOT_ANXIOUS_DEPRESSED,
+)
 
 
 class TestCaseMixin(TestCase):
