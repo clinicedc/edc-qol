@@ -1,5 +1,15 @@
+from copy import deepcopy
+
 from django.test import TestCase
 from edc_utils import get_utcnow
+
+from edc_qol.constants import (
+    NO_PAIN_DISCOMFORT,
+    NO_PROBLEM_SELF_CARE,
+    NO_PROBLEM_USUAL_ACTIVITIES,
+    NO_PROBLEM_WALKING,
+    NOT_ANXIOUS_DEPRESSED,
+)
 
 
 class TestCaseMixin(TestCase):
@@ -8,3 +18,16 @@ class TestCaseMixin(TestCase):
         self.data = dict(
             subject_identifier=self.subject_identifier, report_datetime=get_utcnow()
         )
+
+    def get_best_case_patient_history_data(self):
+        data = deepcopy(self.data)
+        data.update(
+            {
+                "mobility": NO_PROBLEM_WALKING,
+                "self_care": NO_PROBLEM_SELF_CARE,
+                "usual_activities": NO_PROBLEM_USUAL_ACTIVITIES,
+                "pain_discomfort": NO_PAIN_DISCOMFORT,
+                "anxiety_depression": NOT_ANXIOUS_DEPRESSED,
+            }
+        )
+        return data
