@@ -23,11 +23,11 @@ class TestCaseMixin(TestCase):
         data = deepcopy(self.data)
         data.update(
             {
+                "anxiety_depression": NOT_ANXIOUS_DEPRESSED,
                 "mobility": NO_PROBLEM_WALKING,
+                "pain_discomfort": NO_PAIN_DISCOMFORT,
                 "self_care": NO_PROBLEM_SELF_CARE,
                 "usual_activities": NO_PROBLEM_USUAL_ACTIVITIES,
-                "pain_discomfort": NO_PAIN_DISCOMFORT,
-                "anxiety_depression": NOT_ANXIOUS_DEPRESSED,
             }
         )
         return data
