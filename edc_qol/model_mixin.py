@@ -33,7 +33,7 @@ class Eq5d3lModelMixin(models.Model):
     )
 
     health_today_score_slider = models.CharField(
-        verbose_name=format_html(f"Visual score for how your health is TODAY"),
+        verbose_name=format_html("Visual score for how your health is TODAY"),
         max_length=3,
     )
 
