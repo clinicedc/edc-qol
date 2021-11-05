@@ -2,7 +2,7 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 from django.utils.html import format_html
 
-from .choices import (
+from ..choices import (
     ANXIETY_DEPRESSION,
     MOBILITY,
     PAIN_DISCOMFORT,

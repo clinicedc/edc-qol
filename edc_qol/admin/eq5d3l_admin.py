@@ -3,9 +3,9 @@ from django.utils.html import format_html
 from django_audit_fields.admin import audit_fieldset_tuple
 from edc_model_admin import ModelAdminInstitutionMixin, SimpleHistoryAdmin
 
-from .admin_site import edc_qol_admin
-from .forms import Eq5d3lForm
-from .models import Eq5d3l
+from ..admin_site import edc_qol_admin
+from ..forms import Eq5d3lForm
+from ..models import Eq5d3l
 
 eq5d3l_description = """
 <H5><B><font color="orange">Interviewer to read</font></B></H5>
