@@ -62,7 +62,7 @@ def eq5d3l_radio_fields():
 
 
 @admin.register(Eq5d3l, site=edc_qol_admin)
-class Eq53dlAdmin(ModelAdminInstitutionMixin, SimpleHistoryAdmin):
+class Eq5d3lAdmin(ModelAdminInstitutionMixin, SimpleHistoryAdmin):
 
     form = Eq5d3lForm
 
