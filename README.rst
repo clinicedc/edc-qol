@@ -5,7 +5,10 @@ edc-qol
 
 Django classes for Quality of Life instruments.
 
-Work in progress...
+Includes:
+
+* EQ-5D-3L Instrument
+* SF-12 Health Survey
 
 See:
 

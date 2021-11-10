@@ -3,7 +3,7 @@ from edc_crf.modelform_mixins import CrfModelFormMixin
 from edc_form_validators.form_validator import FormValidator
 from edc_model.widgets import SliderWidget
 
-from .models import Eq5d3l
+from ..models import Eq5d3l
 
 
 class Eq5d3lFormValidator(FormValidator):

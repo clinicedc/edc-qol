@@ -3,9 +3,9 @@ from django.utils.html import format_html
 from django_audit_fields.admin import audit_fieldset_tuple
 from edc_model_admin import ModelAdminInstitutionMixin, SimpleHistoryAdmin
 
-from .admin_site import edc_qol_admin
-from .forms import Eq5d3lForm
-from .models import Eq5d3l
+from ..admin_site import edc_qol_admin
+from ..forms import Eq5d3lForm
+from ..models import Eq5d3l
 
 eq5d3l_description = """
 <H5><B><font color="orange">Interviewer to read</font></B></H5>
@@ -62,7 +62,7 @@ def eq5d3l_radio_fields():
 
 
 @admin.register(Eq5d3l, site=edc_qol_admin)
-class Eq53dlAdmin(ModelAdminInstitutionMixin, SimpleHistoryAdmin):
+class Eq5d3lAdmin(ModelAdminInstitutionMixin, SimpleHistoryAdmin):
 
     form = Eq5d3lForm
 

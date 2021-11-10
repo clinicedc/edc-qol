@@ -5,12 +5,12 @@ from edc_model.models import HistoricalRecords
 from edc_sites.models import CurrentSiteManager, SiteModelMixin
 from edc_utils import get_utcnow
 
-from .model_mixin import Eq5d3lModelMixin
+from ..model_mixins import Sf12ModelMixin
 
 
-class Eq5d3l(
+class Sf12(
     UniqueSubjectIdentifierFieldMixin,
-    Eq5d3lModelMixin,
+    Sf12ModelMixin,
     SiteModelMixin,
     edc_models.BaseUuidModel,
 ):
@@ -20,5 +20,5 @@ class Eq5d3l(
     objects = models.Manager()
     history = HistoricalRecords()
 
-    class Meta(Eq5d3lModelMixin.Meta, edc_models.BaseUuidModel.Meta):
+    class Meta(Sf12ModelMixin.Meta, edc_models.BaseUuidModel.Meta):
         pass
