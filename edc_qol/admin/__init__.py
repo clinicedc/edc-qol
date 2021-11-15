@@ -1,2 +1,2 @@
-from .eq5d3l_admin import Eq5d3lAdmin
-from .sf12_admin import Sf12Admin
+from .eq5d3l_admin import Eq5d3lAdmin, eq5d3l_fieldsets, eq5d3l_radio_fields
+from .sf12_admin import Sf12Admin, sf12_fieldsets, sf12_radio_fields
