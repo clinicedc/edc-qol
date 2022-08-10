@@ -1,5 +1,5 @@
 from django.db import models
-from django.utils.safestring import mark_safe
+from django.utils.html import format_html
 from edc_constants.choices import YES_NO
 
 from ..choices import (
@@ -20,7 +20,7 @@ class Sf12ModelMixin(models.Model):
     )
 
     moderate_activities_now_limited = models.CharField(
-        verbose_name=mark_safe(
+        verbose_name=format_html(
             "<u>Moderate activities</u> such as moving a table, "
             "pushing a vacuum cleaner, bowling, or playing golf:"
         ),
@@ -29,37 +29,39 @@ class Sf12ModelMixin(models.Model):
     )
 
     climbing_stairs_now_limited = models.CharField(
-        verbose_name=mark_safe("Climbing <u>several</u> flights of stairs:"),
+        verbose_name=format_html("Climbing <u>several</u> flights of stairs:"),
         max_length=20,
         choices=HEALTH_LIMITED_CHOICES,
     )
 
     accomplished_less_physical_health = models.CharField(
-        verbose_name=mark_safe("<u>Accomplished less</u> than you would like:"),
+        verbose_name=format_html("<u>Accomplished less</u> than you would like:"),
         max_length=15,
         choices=YES_NO,
     )
 
     work_limited_physical_health = models.CharField(
-        verbose_name=mark_safe("Were limited in the <u>kind</u> of work or other activities:"),
+        verbose_name=format_html(
+            "Were limited in the <u>kind</u> of work or other activities:"
+        ),
         max_length=15,
         choices=YES_NO,
     )
 
     accomplished_less_emotional = models.CharField(
-        verbose_name=mark_safe("<u>Accomplished less</u> than you would like:"),
+        verbose_name=format_html("<u>Accomplished less</u> than you would like:"),
         max_length=15,
         choices=YES_NO,
     )
 
     work_less_carefully_emotional = models.CharField(
-        verbose_name=mark_safe("Did work or activities <u>less carefully than usual</u>:"),
+        verbose_name=format_html("Did work or activities <u>less carefully than usual</u>:"),
         max_length=15,
         choices=YES_NO,
     )
 
     pain_interfere_work = models.CharField(
-        verbose_name=mark_safe(
+        verbose_name=format_html(
             "During the <u>past 4 weeks</u>, how much <u>did pain interfere</u> "
             "with your normal work (including work outside the home and housework)?"
         ),
@@ -86,7 +88,7 @@ class Sf12ModelMixin(models.Model):
     )
 
     social_activities_interfered = models.CharField(
-        verbose_name=mark_safe(
+        verbose_name=format_html(
             "During the <u>past 4 weeks</u>, how much of the time has your physical "
             "health or emotional problems interfered with your social "
             "activities (like visiting friends, relatives, etc.)?"

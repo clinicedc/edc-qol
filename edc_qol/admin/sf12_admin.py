@@ -1,6 +1,5 @@
 from django.contrib import admin
 from django.utils.html import format_html
-from django.utils.safestring import mark_safe
 from django_audit_fields.admin import audit_fieldset_tuple
 from edc_model_admin import ModelAdminInstitutionMixin, SimpleHistoryAdmin
 
@@ -8,7 +7,7 @@ from ..admin_site import edc_qol_admin
 from ..forms import Sf12Form
 from ..models import Sf12
 
-additional_instructions = mark_safe(
+additional_instructions = format_html(
     "<p>"
     "This survey asks for your views about your health. This information "
     "will help keep track of how you feel and how well you are able to do "
