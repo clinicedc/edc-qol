@@ -1,7 +1,8 @@
 from django.contrib import admin
 from django.utils.html import format_html
 from django_audit_fields.admin import audit_fieldset_tuple
-from edc_model_admin import ModelAdminInstitutionMixin, SimpleHistoryAdmin
+from edc_model_admin.history import SimpleHistoryAdmin
+from edc_model_admin.mixins import ModelAdminInstitutionMixin
 
 from ..admin_site import edc_qol_admin
 from ..forms import Eq5d3lForm
