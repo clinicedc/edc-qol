@@ -1,12 +1,12 @@
 from django import forms
+from edc_crf.crf_form_validator import CrfFormValidator
 from edc_crf.modelform_mixins import CrfModelFormMixin
-from edc_form_validators.form_validator import FormValidator
 from edc_model.widgets import SliderWidget
 
 from ..models import Eq5d3l
 
 
-class Eq5d3lFormValidator(FormValidator):
+class Eq5d3lFormValidator(CrfFormValidator):
     def clean(self) -> None:
         self.confirm_scores_match()
 
