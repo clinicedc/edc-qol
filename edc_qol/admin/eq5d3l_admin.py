@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.utils.html import format_html
 from django_audit_fields.admin import audit_fieldset_tuple
+from edc_model_admin.dashboard import ModelAdminSubjectDashboardMixin
 from edc_model_admin.history import SimpleHistoryAdmin
-from edc_model_admin.mixins import ModelAdminInstitutionMixin
 
 from ..admin_site import edc_qol_admin
 from ..forms import Eq5d3lForm
@@ -63,7 +63,7 @@ def eq5d3l_radio_fields():
 
 
 @admin.register(Eq5d3l, site=edc_qol_admin)
-class Eq5d3lAdmin(ModelAdminInstitutionMixin, SimpleHistoryAdmin):
+class Eq5d3lAdmin(ModelAdminSubjectDashboardMixin, SimpleHistoryAdmin):
 
     form = Eq5d3lForm
 

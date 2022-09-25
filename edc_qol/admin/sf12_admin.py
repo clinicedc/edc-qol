@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.utils.html import format_html
 from django_audit_fields.admin import audit_fieldset_tuple
+from edc_model_admin.dashboard import ModelAdminSubjectDashboardMixin
 from edc_model_admin.history import SimpleHistoryAdmin
-from edc_model_admin.mixins import ModelAdminInstitutionMixin
 
 from ..admin_site import edc_qol_admin
 from ..forms import Sf12Form
@@ -128,7 +128,7 @@ def sf12_radio_fields():
 
 
 @admin.register(Sf12, site=edc_qol_admin)
-class Sf12Admin(ModelAdminInstitutionMixin, SimpleHistoryAdmin):
+class Sf12Admin(ModelAdminSubjectDashboardMixin, SimpleHistoryAdmin):
 
     form = Sf12Form
 
