@@ -1,3 +1,5 @@
+from django.utils.html import format_html
+
 from .constants import (
     ALL_OF_THE_TIME,
     CONFINED_TO_BED,
@@ -92,4 +94,53 @@ WORK_PAIN_INTERFERENCE_CHOICES = (
     ("moderately", "Moderately"),
     ("quite_a-bit", "Quite a bit"),
     ("extremely", "Extremely"),
+)
+
+ICECAP_STABILITY = (
+    ("4", format_html("I am able to feel settled and secure in <B>all</B> areas of my life")),
+    ("3", format_html("I am able to feel settled and secure in <B>many</B> areas of my life")),
+    (
+        "2",
+        format_html("I am able to feel settled and secure in a <B>few</B> areas of my life"),
+    ),
+    (
+        "1",
+        format_html(
+            "I am <B>unable</B> to feel settled and secure in <B>any</B> areas of my life"
+        ),
+    ),
+)
+
+
+ICECAP_ATTACHMENT = (
+    ("4", format_html("I can have <B>a lot</B> of love, friendship and support")),
+    ("3", format_html("I can have <B>quite a lot</B> of love, friendship and support")),
+    ("2", format_html("I can have <B>a little</B> love, friendship and support")),
+    ("1", format_html("I <B>cannot</B> have <B>any</B> love, friendship and support")),
+)
+
+
+ICECAP_AUTONOMY = (
+    ("4", format_html("I am able to be <B>completely</B> independent")),
+    ("3", format_html("I am able to be independent in <B>many</B> things")),
+    ("2", format_html("I am able to be independent in <B>a few</B> things")),
+    ("1", format_html("I am <B>unable</B> to be at all independent")),
+)
+
+ICECAP_ACHIEVMENT = (
+    ("4", format_html("I can achieve and progress in <B>all</B> aspects of my life")),
+    ("3", format_html("I can achieve and progress in <B>many</B> aspects of my life")),
+    ("2", format_html("I can achieve and progress in <B>a few</B> aspects of my life")),
+    (
+        "1",
+        format_html("I <B>cannot</B> achieve and progress in <B>any</B> aspects of my life"),
+    ),
+)
+
+
+ICECAP_ENJOYMENT = (
+    ("4", format_html("I can have a lot of enjoyment and pleasure")),
+    ("3", format_html("I can have quite a lot of enjoyment and pleasure")),
+    ("2", format_html("I can have a little enjoyment and pleasure")),
+    ("1", format_html("I cannot have any enjoyment and pleasure")),
 )
