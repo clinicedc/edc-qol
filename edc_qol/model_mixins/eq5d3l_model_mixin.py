@@ -12,7 +12,6 @@ from ..choices import (
 
 
 class Eq5d3lModelMixin(models.Model):
-
     mobility = models.CharField(verbose_name="Mobility", max_length=45, choices=MOBILITY)
 
     self_care = models.CharField(verbose_name="Self-care", max_length=45, choices=SELF_CARE)

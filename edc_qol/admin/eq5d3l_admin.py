@@ -64,7 +64,6 @@ def eq5d3l_radio_fields():
 
 @admin.register(Eq5d3l, site=edc_qol_admin)
 class Eq5d3lAdmin(ModelAdminSubjectDashboardMixin, SimpleHistoryAdmin):
-
     form = Eq5d3lForm
 
     fieldsets = (

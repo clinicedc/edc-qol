@@ -12,7 +12,6 @@ from ..choices import (
 
 
 class Sf12ModelMixin(models.Model):
-
     general_health = models.CharField(
         verbose_name="In general, would you say your health is:",
         max_length=15,

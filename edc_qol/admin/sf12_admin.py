@@ -129,7 +129,6 @@ def sf12_radio_fields():
 
 @admin.register(Sf12, site=edc_qol_admin)
 class Sf12Admin(ModelAdminSubjectDashboardMixin, SimpleHistoryAdmin):
-
     form = Sf12Form
 
     fieldsets = (
