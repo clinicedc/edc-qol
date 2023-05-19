@@ -139,8 +139,8 @@ ICECAP_ACHIEVMENT = (
 
 
 ICECAP_ENJOYMENT = (
-    ("4", format_html("I can have a lot of enjoyment and pleasure")),
-    ("3", format_html("I can have quite a lot of enjoyment and pleasure")),
-    ("2", format_html("I can have a little enjoyment and pleasure")),
-    ("1", format_html("I cannot have any enjoyment and pleasure")),
+    ("4", format_html("I can have <B>a lot</B> of enjoyment and pleasure")),
+    ("3", format_html("I can have <B>quite a lot</B> of enjoyment and pleasure")),
+    ("2", format_html("I can have <B>a little</B> enjoyment and pleasure")),
+    ("1", format_html("I <B>cannot</B> have <B>any</B> enjoyment and pleasure")),
 )
