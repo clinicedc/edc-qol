@@ -16,8 +16,8 @@ class Sf12(
 ):
     report_datetime = models.DateTimeField(default=get_utcnow)
 
-    on_site = CurrentSiteManager()
     objects = models.Manager()
+    on_site = CurrentSiteManager()
     history = HistoricalRecords()
 
     class Meta(Sf12ModelMixin.Meta, edc_models.BaseUuidModel.Meta):
