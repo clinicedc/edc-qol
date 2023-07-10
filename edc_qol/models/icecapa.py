@@ -15,8 +15,8 @@ class Icecapa(
 ):
     report_datetime = models.DateTimeField(default=get_utcnow)
 
-    on_site = CurrentSiteManager()
     objects = models.Manager()
+    on_site = CurrentSiteManager()
     history = HistoricalRecords()
 
     class Meta(IcecapaModelMixin.Meta, BaseUuidModel.Meta):

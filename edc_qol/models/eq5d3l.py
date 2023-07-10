@@ -16,8 +16,8 @@ class Eq5d3l(
 ):
     report_datetime = models.DateTimeField(default=get_utcnow)
 
-    on_site = CurrentSiteManager()
     objects = models.Manager()
+    on_site = CurrentSiteManager()
     history = HistoricalRecords()
 
     class Meta(Eq5d3lModelMixin.Meta, edc_models.BaseUuidModel.Meta):
