@@ -1,0 +1,279 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-23 10:47-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: choices.py:31
+msgid "Excellent"
+msgstr ""
+
+#: choices.py:32
+msgid "Very good"
+msgstr ""
+
+#: choices.py:33
+msgid "Good"
+msgstr ""
+
+#: choices.py:34
+msgid "Fair"
+msgstr ""
+
+#: choices.py:35
+msgid "Poor"
+msgstr ""
+
+#: choices.py:39 choices.py:54
+msgid "All of the time"
+msgstr ""
+
+#: choices.py:40 choices.py:55
+msgid "Most of the time"
+msgstr ""
+
+#: choices.py:41
+msgid "A good bit of the time"
+msgstr ""
+
+#: choices.py:42 choices.py:56
+msgid "Some of the time"
+msgstr ""
+
+#: choices.py:43 choices.py:57
+msgid "A little of the time"
+msgstr ""
+
+#: choices.py:44 choices.py:58
+msgid "None of the time"
+msgstr ""
+
+#: choices.py:48
+msgid "YES, limited a lot"
+msgstr ""
+
+#: choices.py:49
+msgid "YES, limited a little"
+msgstr ""
+
+#: choices.py:50
+msgid "NO, not at all limited"
+msgstr ""
+
+#: choices.py:62
+msgid "I have no problems in walking about"
+msgstr ""
+
+#: choices.py:63
+msgid "I have some problems in walking about"
+msgstr ""
+
+#: choices.py:64
+msgid "I am confined to bed"
+msgstr ""
+
+#: choices.py:68
+msgid "I have no problems with self-care"
+msgstr ""
+
+#: choices.py:69
+msgid "I have some problems washing or dressing myself"
+msgstr ""
+
+#: choices.py:70
+msgid "I am unable to wash or dress myself"
+msgstr ""
+
+#: choices.py:74
+msgid "I have no problems with performing my usual activities"
+msgstr ""
+
+#: choices.py:77
+msgid "I have some problems with performing my usual activities"
+msgstr ""
+
+#: choices.py:79
+msgid "I am unable to perform my usual activities"
+msgstr ""
+
+#: choices.py:83
+msgid "I have no pain or discomfort"
+msgstr ""
+
+#: choices.py:84
+msgid "I have moderate pain or discomfort"
+msgstr ""
+
+#: choices.py:85
+msgid "I have extreme pain or discomfort"
+msgstr ""
+
+#: choices.py:89
+msgid "I am not anxious or depressed"
+msgstr ""
+
+#: choices.py:90
+msgid "I am moderately anxious or depressed"
+msgstr ""
+
+#: choices.py:91
+msgid "I am extremely anxious or depressed"
+msgstr ""
+
+#: choices.py:95
+msgid "Not at all"
+msgstr ""
+
+#: choices.py:96
+msgid "A little bit"
+msgstr ""
+
+#: choices.py:97
+msgid "Moderately"
+msgstr ""
+
+#: choices.py:98
+msgid "Quite a bit"
+msgstr ""
+
+#: choices.py:99
+msgid "Extremely"
+msgstr ""
+
+#: choices.py:106
+msgid "I am able to feel settled and secure in <B>all</B> areas of my life"
+msgstr "Ninaweza kuwa na utulivu na usalama katika maeneo yote ya maisha yangu"
+
+#: choices.py:112
+msgid "I am able to feel settled and secure in <B>many</B> areas of my life"
+msgstr ""
+"Ninaweza kuwa na utulivu na usalama katika maeneo mengi ya maisha yangu"
+
+#: choices.py:118
+msgid "I am able to feel settled and secure in a <B>few</B> areas of my life"
+msgstr ""
+"Ninaweza kuwa na utulivu na usalama katika maeneo machache ya maisha yangu"
+
+#: choices.py:124
+msgid ""
+"I am <B>unable</B> to feel settled and secure in <B>any</B> areas of my life"
+msgstr "Sitaweza kuwa na utulivu na usalama katika maeneo yote ya maisha yangu"
+
+#: choices.py:131
+msgid "I can have <B>a lot</B> of love, friendship and support"
+msgstr "Ninaweza kupata upendo mwingi, urafiki na msaada"
+
+#: choices.py:134
+msgid "I can have <B>quite a lot</B> of love, friendship and support"
+msgstr "Ninaweza walau kuwa na upendo mwingi,urafiki na msaada"
+
+#: choices.py:136
+msgid "I can have <B>a little</B> love, friendship and support"
+msgstr "Ninaweza kuwa na upendo kidogo, urafiki na masaada"
+
+#: choices.py:137
+msgid "I <B>cannot</B> have <B>any</B> love, friendship and support"
+msgstr "Sitaweza kuwa na upendo wowote, urafiki na msaada"
+
+#: choices.py:142
+msgid "I am able to be <B>completely</B> independent"
+msgstr "Kwa ujumla ninaweza kujitemea"
+
+#: choices.py:143
+msgid "I am able to be independent in <B>many</B> things"
+msgstr "Ninaweza kujitegemea katika mambo mengi"
+
+#: choices.py:144
+msgid "I am able to be independent in <B>a few</B> things"
+msgstr "Ninaweza kujitegemea katika mambo machache"
+
+#: choices.py:145
+msgid "I am <B>unable</B> to be at all independent"
+msgstr "Siwezi kujitegemea kwa jambo lolote"
+
+#: choices.py:149
+msgid "I can achieve and progress in <B>all</B> aspects of my life"
+msgstr "Ninaweza kufaniakiwa na kuendelea katika nyanja zote za maisha yangu"
+
+#: choices.py:150
+msgid "I can achieve and progress in <B>many</B> aspects of my life"
+msgstr ""
+"Ninaweza kufanikiwa na kuendelea katika nyanja mbalimbali za maisha yangu"
+
+#: choices.py:153
+msgid "I can achieve and progress in <B>a few</B> aspects of my life"
+msgstr "Ninaweza kufanikiwa na kuendelea katika nyanja chache za maisha yangu"
+
+#: choices.py:158
+msgid "I <B>cannot</B> achieve and progress in <B>any</B> aspects of my life"
+msgstr "Siwezi kufanikiwa na kuendelea katika nyanja yoyote ya maisha yangu"
+
+#: choices.py:165
+msgid "I can have <B>a lot</B> of enjoyment and pleasure"
+msgstr "Ninaweza kuwa na furaha na raha sana"
+
+#: choices.py:166
+msgid "I can have <B>quite a lot</B> of enjoyment and pleasure"
+msgstr "Ninaweza kuwa na furaha na raha nyingi"
+
+#: choices.py:167
+msgid "I can have <B>a little</B> enjoyment and pleasure"
+msgstr "Ninaweza kuwa na furaha na raha kidogo"
+
+#: choices.py:168
+msgid "I <B>cannot</B> have <B>any</B> enjoyment and pleasure"
+msgstr "Siwezi kabisa kuwa na furaha na raha"
+
+#: model_mixins/icecapa_model_mixin.py:21
+msgid "Feeling settled and secure"
+msgstr "kuwa na utulivu na usalama"
+
+#: model_mixins/icecapa_model_mixin.py:27
+msgid "Love, friendship and support"
+msgstr "Upendo, urafiki na msaada"
+
+#: model_mixins/icecapa_model_mixin.py:33
+msgid "Being independent"
+msgstr "Kujitegemea"
+
+#: model_mixins/icecapa_model_mixin.py:39
+msgid "Achievement and progress"
+msgstr "Maendeleo na mafanikio"
+
+#: model_mixins/icecapa_model_mixin.py:45
+msgid "Enjoyment and pleasure"
+msgstr "Furaha na Starehe"
+
+#: model_mixins/icecapa_model_mixin.py:51
+#: model_mixins/icecapa_model_mixin.py:52
+msgid "Overall quality of life (ICECAP-A V2)"
+msgstr "Kuhusu thamani ya maisha yako (ICECAP-A V2)"
+
+#: modeladmin_mixins/icecapa_model_admin_mixin.py:9
+#, fuzzy
+#| msgid "Overall quality of life (ICECAP-A V2)"
+msgid "About your overall quality of life"
+msgstr "Kuhusu thamani ya maisha yako"
+
+#: modeladmin_mixins/icecapa_model_admin_mixin.py:12
+msgid ""
+"Please indicate which statements best describe your overall quality of life "
+"at the moment by selecting ONE option for each of the five questions below."
+msgstr ""
+"Tafadhali chagua maelezo yanayoelezea thamani ya maisha yako kwa sasa kwa "
+"kuweka alama ya vema katika kisanduku KIMOJA kati ya matano yanayoonekana "
+"hapa chini."
