@@ -1,13 +1,14 @@
 from django.contrib import admin
+from django.utils.translation import gettext_lazy as _
 from django_audit_fields import audit_fieldset_tuple
 
 
 def icecapa_fieldsets():
     return [
         (
-            "About your overall quality of life",
+            _("About your overall quality of life"),
             {
-                "description": (
+                "description": _(
                     "Please indicate which statements best describe your overall quality "
                     "of life at the moment by selecting ONE option for each of the five "
                     "questions below."
