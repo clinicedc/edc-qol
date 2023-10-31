@@ -1,0 +1,349 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-11 08:56-0500\n"
+"PO-Revision-Date: 2023-10-11 10:21-0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: PO File Editor https://pofile.net/free-po-editor\n"
+
+#: edc_qol/choices.py:31
+msgid "Excellent"
+msgstr ""
+
+#: edc_qol/choices.py:32
+msgid "Very good"
+msgstr ""
+
+#: edc_qol/choices.py:33
+msgid "Good"
+msgstr ""
+
+#: edc_qol/choices.py:34
+msgid "Fair"
+msgstr ""
+
+#: edc_qol/choices.py:35
+msgid "Poor"
+msgstr ""
+
+#: edc_qol/choices.py:39 edc_qol/choices.py:54
+msgid "All of the time"
+msgstr ""
+
+#: edc_qol/choices.py:40 edc_qol/choices.py:55
+msgid "Most of the time"
+msgstr ""
+
+#: edc_qol/choices.py:41
+msgid "A good bit of the time"
+msgstr ""
+
+#: edc_qol/choices.py:42 edc_qol/choices.py:56
+msgid "Some of the time"
+msgstr ""
+
+#: edc_qol/choices.py:43 edc_qol/choices.py:57
+msgid "A little of the time"
+msgstr ""
+
+#: edc_qol/choices.py:44 edc_qol/choices.py:58
+msgid "None of the time"
+msgstr ""
+
+#: edc_qol/choices.py:48
+msgid "YES, limited a lot"
+msgstr ""
+
+#: edc_qol/choices.py:49
+msgid "YES, limited a little"
+msgstr ""
+
+#: edc_qol/choices.py:50
+msgid "NO, not at all limited"
+msgstr ""
+
+#: edc_qol/choices.py:62
+msgid "I have no problems in walking about"
+msgstr ""
+
+#: edc_qol/choices.py:63
+msgid "I have some problems in walking about"
+msgstr ""
+
+#: edc_qol/choices.py:64
+msgid "I am confined to bed"
+msgstr ""
+
+#: edc_qol/choices.py:68
+msgid "I have no problems with self-care"
+msgstr ""
+
+#: edc_qol/choices.py:69
+msgid "I have some problems washing or dressing myself"
+msgstr ""
+
+#: edc_qol/choices.py:70
+msgid "I am unable to wash or dress myself"
+msgstr ""
+
+#: edc_qol/choices.py:74
+msgid "I have no problems with performing my usual activities"
+msgstr ""
+
+#: edc_qol/choices.py:77
+msgid "I have some problems with performing my usual activities"
+msgstr ""
+
+#: edc_qol/choices.py:79
+msgid "I am unable to perform my usual activities"
+msgstr ""
+
+#: edc_qol/choices.py:83
+msgid "I have no pain or discomfort"
+msgstr ""
+
+#: edc_qol/choices.py:84
+msgid "I have moderate pain or discomfort"
+msgstr ""
+
+#: edc_qol/choices.py:85
+msgid "I have extreme pain or discomfort"
+msgstr ""
+
+#: edc_qol/choices.py:89
+msgid "I am not anxious or depressed"
+msgstr ""
+
+#: edc_qol/choices.py:90
+msgid "I am moderately anxious or depressed"
+msgstr ""
+
+#: edc_qol/choices.py:91
+msgid "I am extremely anxious or depressed"
+msgstr ""
+
+#: edc_qol/choices.py:95
+msgid "Not at all"
+msgstr ""
+
+#: edc_qol/choices.py:96
+msgid "A little bit"
+msgstr ""
+
+#: edc_qol/choices.py:97
+msgid "Moderately"
+msgstr ""
+
+#: edc_qol/choices.py:98
+msgid "Quite a bit"
+msgstr ""
+
+#: edc_qol/choices.py:99
+msgid "Extremely"
+msgstr ""
+
+#: edc_qol/choices.py:106
+msgid "I am able to feel settled and secure in <B>all</B> areas of my life"
+msgstr ""
+"Mpulira ntebenkedde era sirina kinneraliikiriza mu <B>buli</B> mbeera "
+"y’obulamu bwange"
+
+#: edc_qol/choices.py:112
+msgid "I am able to feel settled and secure in <B>many</B> areas of my life"
+msgstr ""
+"Mpulira ntebenkedde era sirina kinneraliikiriza mu mbeera <B>ezisinga</B> "
+"ez’obulamu bwange"
+
+#: edc_qol/choices.py:118
+msgid "I am able to feel settled and secure in a <B>few</B> areas of my life"
+msgstr ""
+"Mpulira ntebenkedde era sirina kinneraliikiriza mu mbeera <B>ezimu</B> "
+"ez’obulamu bwange"
+
+#: edc_qol/choices.py:124
+msgid "I am <B>unable</B> to feel settled and secure in <B>any</B> areas of my life"
+msgstr ""
+"<B>Sirina</B> butebenkefu era nnina ebinneralikiriza mu mbeera ez’obulamu "
+"bwange"
+
+#: edc_qol/choices.py:131
+msgid "I can have <B>a lot</B> of love, friendship and support"
+msgstr "Nsobola okufuna okwagala, omukwano n’okubudaabudibwa <B>mu bungi nnyo</B>"
+
+#: edc_qol/choices.py:134
+msgid "I can have <B>quite a lot</B> of love, friendship and support"
+msgstr "Nsobola okufuna okwagala, omukwano n’okubudaabudibwa <B>mu bungi ko</B>"
+
+#: edc_qol/choices.py:136
+msgid "I can have <B>a little</B> love, friendship and support"
+msgstr "Nsobola okufuna okwagala, omukwano n’okubudaabudibwa <B>okusaamusaamu</B>"
+
+#: edc_qol/choices.py:137
+msgid "I <B>cannot</B> have <B>any</B> love, friendship and support"
+msgstr "<B>Sisobola</B> kufuna okwagala, mukwano <B>yadde</B> kubudaabudibw "
+
+#: edc_qol/choices.py:142
+msgid "I am able to be <B>completely</B> independent"
+msgstr "Nsobola okwemalirira <B>mu bujjuvu</B>"
+
+#: edc_qol/choices.py:143
+msgid "I am able to be independent in <B>many</B> things"
+msgstr "Nsobola okwemalirira <B>mu bintu bingi</B>"
+
+#: edc_qol/choices.py:144
+msgid "I am able to be independent in <B>a few</B> things"
+msgstr "Nsobola okwemalirira <B>mu bintu ebitonotono</B>"
+
+#: edc_qol/choices.py:145
+msgid "I am <B>unable</B> to be at all independent"
+msgstr "Sisobolerako ddala  kwemalirira"
+
+#: edc_qol/choices.py:149
+msgid "I can achieve and progress in <B>all</B> aspects of my life"
+msgstr ""
+"Nsobola okwetuusa ku buwanguzi n’okwekulaakulanya mu <B>buli</B> mbeera "
+"y’obulamu bwange"
+
+#: edc_qol/choices.py:150
+msgid "I can achieve and progress in <B>many</B> aspects of my life"
+msgstr ""
+"Nsobola okwetuusa ku buwanguzi n’okwekulaakulanya mu mbeera <B>ezisinga "
+"obungi</B> ez’obulamu bwange"
+
+#: edc_qol/choices.py:153
+msgid "I can achieve and progress in <B>a few</B> aspects of my life"
+msgstr ""
+"Nsobola okwetuusa ku buwanguzi n’okwekulaakulanya mu mbeera "
+"<B>entonootono</B> ez’obulamu bwange"
+
+#: edc_qol/choices.py:158
+msgid "I <B>cannot</B> achieve and progress in <B>any</B> aspects of my life"
+msgstr ""
+"<B>Sisobola</B> kuwangula wadde okwekulaakulanya <B>mu mbeera yonna</B> "
+"ey’obulamu bwange"
+
+#: edc_qol/choices.py:165
+msgid "I can have <B>a lot</B> of enjoyment and pleasure"
+msgstr "Nnina obusobozi bw’okunyumirwa obulamu n’okusanyuka <B>bungi ddala</B>"
+
+#: edc_qol/choices.py:166
+msgid "I can have <B>quite a lot</B> of enjoyment and pleasure"
+msgstr "Nnina obusobozi bw’okunyumirwa obulamu n’okusanyuka <B>bungiko</B>"
+
+#: edc_qol/choices.py:167
+msgid "I can have <B>a little</B> enjoyment and pleasure"
+msgstr "Nnina obusobozi bw’okunyumirwa obulamu n’okusanyuka butonotono"
+
+#: edc_qol/choices.py:168
+msgid "I <B>cannot</B> have <B>any</B> enjoyment and pleasure"
+msgstr ""
+"<B>Ssirina</B> busobozi bw’okunyumirwa obulamu wadde okusanyuka "
+"<B>kwonna</B>"
+
+#: edc_qol/model_mixins/icecapa_model_mixin.py:21
+msgid "Feeling settled and secure"
+msgstr "Okuwulira nga ntebenkedde era sirina kinneraliikiriza"
+
+#: edc_qol/model_mixins/icecapa_model_mixin.py:27
+msgid "Love, friendship and support"
+msgstr "Okwagala, omukwano, n’obudaabuda "
+
+#: edc_qol/model_mixins/icecapa_model_mixin.py:33
+msgid "Being independent"
+msgstr "Okwemalirira"
+
+#: edc_qol/model_mixins/icecapa_model_mixin.py:39
+msgid "Achievement and progress"
+msgstr "Obuwanguzi n’enkulaakulana"
+
+#: edc_qol/model_mixins/icecapa_model_mixin.py:45
+msgid "Enjoyment and pleasure"
+msgstr "Okunyumirwa obulamu n’okusanyuka"
+
+#: edc_qol/model_mixins/icecapa_model_mixin.py:51
+#: edc_qol/model_mixins/icecapa_model_mixin.py:52
+msgid "Overall quality of life (ICECAP-A V2)"
+msgstr "Ebikwata ku mutindo gw'embeera y’obulamubwo bwonna (ICECAP-A V2)"
+
+#: edc_qol/model_mixins/sf12_model_mixin.py:17
+msgid "In general, would you say your health is:"
+msgstr ""
+
+#: edc_qol/model_mixins/sf12_model_mixin.py:25
+msgid ""
+"<u>Moderate activities</u> such as moving a table, pushing a vacuum "
+"cleaner, bowling, or playing golf:"
+msgstr ""
+
+#: edc_qol/model_mixins/sf12_model_mixin.py:34
+msgid "Climbing <u>several</u> flights of stairs:"
+msgstr ""
+
+#: edc_qol/model_mixins/sf12_model_mixin.py:40
+#: edc_qol/model_mixins/sf12_model_mixin.py:54
+msgid "<u>Accomplished less</u> than you would like:"
+msgstr ""
+
+#: edc_qol/model_mixins/sf12_model_mixin.py:47
+msgid "Were limited in the <u>kind</u> of work or other activities:"
+msgstr ""
+
+#: edc_qol/model_mixins/sf12_model_mixin.py:61
+msgid "Did work or activities <u>less carefully than usual</u>:"
+msgstr ""
+
+#: edc_qol/model_mixins/sf12_model_mixin.py:70
+msgid ""
+"During the <u>past 4 weeks</u>, how much <u>did pain interfere</u> with "
+"your normal work (including work outside the home and housework)?"
+msgstr ""
+
+#: edc_qol/model_mixins/sf12_model_mixin.py:79
+msgid "Have you felt calm & peaceful?"
+msgstr ""
+
+#: edc_qol/model_mixins/sf12_model_mixin.py:85
+msgid "Did you have a lot of energy?"
+msgstr ""
+
+#: edc_qol/model_mixins/sf12_model_mixin.py:91
+msgid "Have you felt down-hearted and blue?"
+msgstr ""
+
+#: edc_qol/model_mixins/sf12_model_mixin.py:99
+msgid ""
+"During the <u>past 4 weeks</u>, how much of the time has your physical "
+"health or emotional problems interfered with your social activities (like "
+"visiting friends, relatives, etc.)?"
+msgstr ""
+
+#: edc_qol/model_mixins/sf12_model_mixin.py:110
+#: edc_qol/model_mixins/sf12_model_mixin.py:111
+msgid "SF-12 Health Survey"
+msgstr ""
+
+#: edc_qol/modeladmin_mixins/icecapa_model_admin_mixin.py:9
+msgid "About your overall quality of life"
+msgstr "Ebikwata ku mutindo gw'embeera y’obulamubwo bwonna"
+
+#: edc_qol/modeladmin_mixins/icecapa_model_admin_mixin.py:12
+msgid ""
+"Please indicate which statements best describe your overall quality of life "
+"at the moment by selecting ONE option for each of the five questions below."
+msgstr ""
+"Nsaba olage ebigambo ki ebisinga okunnyonnyola omutindo gw’obulamubwo "
+"okutwalira awamu mu kiseera kino ng’oteeka akabonero mu kasanduuko kamu ku "
+"buli gumu ku mitwe etaano wammanga"
