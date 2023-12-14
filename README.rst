@@ -29,8 +29,8 @@ See also:
 .. |pypi| image:: https://img.shields.io/pypi/v/edc-qol.svg
     :target: https://pypi.python.org/pypi/edc-qol
 
-.. |actions| image:: https://github.com/clinicedc/edc-qol/workflows/build/badge.svg?branch=develop
-  :target: https://github.com/clinicedc/edc-qol/actions?query=workflow:build
+.. |actions| image:: https://github.com/clinicedc/edc-qol/actions/workflows/build.yml/badge.svg
+  :target: https://github.com/clinicedc/edc-qol/actions/workflows/build.yml
 
 .. |codecov| image:: https://codecov.io/gh/clinicedc/edc-qol/branch/develop/graph/badge.svg
     :target: https://codecov.io/gh/clinicedc/edc-qol
