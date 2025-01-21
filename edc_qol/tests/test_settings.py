@@ -19,6 +19,7 @@ project_settings = DefaultTestSettings(
     ],
     SUBJECT_VISIT_MODEL="edc_visit_tracking.subjectvisit",
     EDC_AUTH_SKIP_SITE_AUTHS=True,
+    EDC_AUTH_SKIP_AUTH_UPDATER=True,
     INSTALLED_APPS=[
         "django.contrib.admin",
         "django.contrib.auth",
