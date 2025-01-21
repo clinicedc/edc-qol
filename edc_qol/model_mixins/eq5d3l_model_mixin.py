@@ -1,6 +1,7 @@
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 from django.utils.html import format_html
+from django.utils.safestring import mark_safe
 
 from ..choices import (
     ANXIETY_DEPRESSION,
@@ -32,14 +33,17 @@ class Eq5d3lModelMixin(models.Model):
     )
 
     health_today_score_slider = models.CharField(
-        verbose_name=format_html("Visual score for how your health is TODAY"),
+        verbose_name=format_html("{}", "Visual score for how your health is TODAY"),
         max_length=3,
     )
 
     health_today_score_confirmed = models.IntegerField(
         verbose_name=format_html(
-            "<B><font color='orange'>Interviewer</font></B>: "
-            "please confirm the number on the scale indicated from above."
+            "{}",
+            mark_safe(  # nosec B308, B703
+                "<B><font color='orange'>Interviewer</font></B>: "
+                "please confirm the number on the scale indicated from above."
+            ),
         ),
         validators=[MinValueValidator(0), MaxValueValidator(100)],
         help_text=(

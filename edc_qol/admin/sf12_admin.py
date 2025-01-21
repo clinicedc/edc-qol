@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.utils.html import format_html
+from django.utils.safestring import mark_safe
 from django_audit_fields.admin import audit_fieldset_tuple
 from edc_model_admin.dashboard import ModelAdminSubjectDashboardMixin
 from edc_model_admin.history import SimpleHistoryAdmin
@@ -9,13 +10,16 @@ from ..forms import Sf12Form
 from ..models import Sf12
 
 additional_instructions = format_html(
-    "<p>"
-    "This survey asks for your views about your health. This information "
-    "will help keep track of how you feel and how well you are able to do "
-    "your usual activities. "
-    "<b>Answer each question by choosing just one answer</b>. If you are "
-    "unsure how to answer a question, please give the best answer you can."
-    "</p>"
+    "{}",
+    mark_safe(  # nosec B308, B703
+        "<p>"
+        "This survey asks for your views about your health. This information "
+        "will help keep track of how you feel and how well you are able to do "
+        "your usual activities. "
+        "<b>Answer each question by choosing just one answer</b>. If you are "
+        "unsure how to answer a question, please give the best answer you can."
+        "</p>"
+    ),
 )
 
 past_4w = "<u>past 4 weeks</u>"
@@ -61,7 +65,9 @@ def sf12_fieldsets():
         (
             "Part 2: Activities limited by health",
             {
-                "description": format_html(part2_description),
+                "description": format_html(
+                    "{}", mark_safe(part2_description)  # nosec B308, B703
+                ),
                 "fields": (
                     "moderate_activities_now_limited",
                     "climbing_stairs_now_limited",
@@ -71,7 +77,9 @@ def sf12_fieldsets():
         (
             "Part 3: Physical health problems (last 4 weeks)",
             {
-                "description": format_html(part3_description),
+                "description": format_html(
+                    "{}", mark_safe(part3_description)  # nosec B308, B703
+                ),
                 "fields": (
                     "accomplished_less_physical_health",
                     "work_limited_physical_health",
@@ -81,7 +89,9 @@ def sf12_fieldsets():
         (
             "Part 4: Emotional problems (last 4 weeks)",
             {
-                "description": format_html(part4_description),
+                "description": format_html(
+                    "{}", mark_safe(part4_description)  # nosec B308, B703
+                ),
                 "fields": (
                     "accomplished_less_emotional",
                     "work_less_carefully_emotional",
@@ -95,7 +105,9 @@ def sf12_fieldsets():
         (
             "Part 6: Feeling (last 4 weeks)",
             {
-                "description": format_html(part6_description),
+                "description": format_html(
+                    "{}", mark_safe(part6_description)  # nosec B308, B703
+                ),
                 "fields": (
                     "felt_calm_peaceful",
                     "felt_lot_energy",
