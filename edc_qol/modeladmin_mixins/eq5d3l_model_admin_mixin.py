@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.utils.html import format_html
+from django.utils.safestring import mark_safe
 from django_audit_fields.admin import audit_fieldset_tuple
 
 eq5d3l_description = """
@@ -36,7 +37,9 @@ def eq5d3l_fieldsets():
         (
             "How is your health TODAY?",
             {
-                "description": format_html(eq5d3l_description),
+                "description": format_html(
+                    "{}", mark_safe(eq5d3l_description)  # nosec B308, B703
+                ),
                 "fields": (
                     "health_today_score_slider",
                     "health_today_score_confirmed",
