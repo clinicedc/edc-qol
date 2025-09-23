@@ -18,6 +18,6 @@ for model in [
 ]:
     app_name, model_name = model.split(".")
     for prefix in ["add", "change", "view", "delete"]:
-        edc_qol_codenames.append(f"{app_name}.{prefix}_{model_name}")
+        edc_qol_codenames.append(f"{app_name}.{prefix}_{model_name}")  # noqa: PERF401
     edc_qol_codenames.append(f"{app_name}.view_historical{model_name}")
 edc_qol_codenames.sort()

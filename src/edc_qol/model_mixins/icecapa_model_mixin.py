@@ -14,7 +14,7 @@ class IcecapaModelMixin(models.Model):
     """
     Al-Janabi H, Flynn TN, Coast J. Development of a self-report
     measure of capability wellbeing for adults: the ICECAP-A.
-    Quality of Life Research. 2012;21:167–176
+    Quality of Life Research. 2012;21:167-176
     """
 
     stability = models.CharField(

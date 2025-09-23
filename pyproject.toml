@@ -40,11 +40,62 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
 ]
 dependencies = [
-    "clinicedc>=2.0.10",
+    "clinicedc>=2.0.3",
 ]
 
 [project.urls]
 Homepage = "https://github.com/clinicedc/edc-qol"
+
+[tool.ruff]
+line-length = 95
+indent-width = 4
+target-version = "py312"
+exclude = ["migrations", ".tox", ".venv"]
+
+[tool.ruff.lint]
+select = [
+    "A",
+    "ARG",
+    "B",
+    "C90",
+    "COM",
+    "DJ",
+    "DTZ",
+    "E",
+    "F",
+    "FA",
+    "FURB",
+    "I",
+    "INT",
+    "N",
+    "PD",
+    "PERF",
+    "PL",
+    "PLR",
+    "PTH",
+    "RET",
+    "RUF",
+    "S",
+    "SIM",
+    "T20",
+    "TRY",
+    "UP",
+    "W",
+    # "FIX",
+]
+ignore = ["DJ008", "DJ007", "DJ006", "COM812", "PLC0206", "PLR2004", "TRY003"]
+
+[tool.ruff.lint.per-file-ignores]
+    "__init__.py" = ["F401"]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 12
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
 
 [tool.coverage.run]
 parallel = false
@@ -57,7 +108,7 @@ source = ["edc_qol"]
 [tool.coverage.report]
 show_missing = true
 skip_covered = true
-omit = ["*.txt", "*/migrations/*"]
+omit = ["requirements.txt", "*/migrations/*"]
 exclude_lines = [
   "pragma: no cover",
   "if TYPE_CHECKING:",
@@ -82,11 +133,12 @@ test = [
     "model-bakery>=1.20.5",
     "time-machine>=2.16.0",
     "tqdm>=4.67.1",
-    "edc-test-settings>=1.1.2",
+    "edc-test-settings>=2.0.0",
+    "clinicedc-tests>=0.1.2",
 ]
 
 [tool.uv.sources]
-edc-csf = { workspace = true }
+edc-qol = { workspace = true }
 clinicedc = { path = "../clinicedc", editable = true }
 clinicedc-tests = { path = "../clinicedc-tests", editable = true }
 edc-test-settings = { path = "../edc-test-settings", editable = true }
