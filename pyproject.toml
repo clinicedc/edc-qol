@@ -57,7 +57,7 @@ source = ["edc_qol"]
 [tool.coverage.report]
 show_missing = true
 skip_covered = true
-omit = ["requirements.txt"]
+omit = ["*.txt", "*/migrations/*"]
 exclude_lines = [
   "pragma: no cover",
   "if TYPE_CHECKING:",
