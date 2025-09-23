@@ -7,13 +7,13 @@ import django.db.models.deletion
 import django_audit_fields.fields.hostname_modification_field
 import django_audit_fields.fields.userfield
 import django_audit_fields.fields.uuid_auto_field
-import django_audit_fields.models.audit_model_mixin
 import django_revision.revision_field
 import edc_sites.models
 import edc_utils.date
 import simple_history.models
 from django.conf import settings
 from django.db import migrations, models
+from django.utils import timezone
 
 
 class Migration(migrations.Migration):
@@ -40,15 +40,11 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "created",
-                    models.DateTimeField(
-                        blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
-                    ),
+                    models.DateTimeField(blank=True, default=timezone.now),
                 ),
                 (
                     "modified",
-                    models.DateTimeField(
-                        blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
-                    ),
+                    models.DateTimeField(blank=True, default=timezone.now),
                 ),
                 (
                     "user_created",
@@ -127,12 +123,18 @@ class Migration(migrations.Migration):
                     "attachment",
                     models.CharField(
                         choices=[
-                            ("4", "I can have <B>a lot</B> of love, friendship and support"),
+                            (
+                                "4",
+                                "I can have <B>a lot</B> of love, friendship and support",
+                            ),
                             (
                                 "3",
                                 "I can have <B>quite a lot</B> of love, friendship and support",
                             ),
-                            ("2", "I can have <B>a little</B> love, friendship and support"),
+                            (
+                                "2",
+                                "I can have <B>a little</B> love, friendship and support",
+                            ),
                             (
                                 "1",
                                 "I <B>cannot</B> have <B>any</B> love, friendship and support",
@@ -193,7 +195,10 @@ class Migration(migrations.Migration):
                         verbose_name="Enjoyment and pleasure",
                     ),
                 ),
-                ("report_datetime", models.DateTimeField(default=edc_utils.date.get_utcnow)),
+                (
+                    "report_datetime",
+                    models.DateTimeField(default=edc_utils.date.get_utcnow),
+                ),
                 (
                     "site",
                     models.ForeignKey(
@@ -211,7 +216,14 @@ class Migration(migrations.Migration):
                 "ordering": ("-modified", "-created"),
                 "get_latest_by": "modified",
                 "abstract": False,
-                "default_permissions": ("add", "change", "delete", "view", "export", "import"),
+                "default_permissions": (
+                    "add",
+                    "change",
+                    "delete",
+                    "view",
+                    "export",
+                    "import",
+                ),
             },
             managers=[
                 ("on_site", edc_sites.models.CurrentSiteManager()),
@@ -233,15 +245,11 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "created",
-                    models.DateTimeField(
-                        blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
-                    ),
+                    models.DateTimeField(blank=True, default=timezone.now),
                 ),
                 (
                     "modified",
-                    models.DateTimeField(
-                        blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
-                    ),
+                    models.DateTimeField(blank=True, default=timezone.now),
                 ),
                 (
                     "user_created",
@@ -319,12 +327,18 @@ class Migration(migrations.Migration):
                     "attachment",
                     models.CharField(
                         choices=[
-                            ("4", "I can have <B>a lot</B> of love, friendship and support"),
+                            (
+                                "4",
+                                "I can have <B>a lot</B> of love, friendship and support",
+                            ),
                             (
                                 "3",
                                 "I can have <B>quite a lot</B> of love, friendship and support",
                             ),
-                            ("2", "I can have <B>a little</B> love, friendship and support"),
+                            (
+                                "2",
+                                "I can have <B>a little</B> love, friendship and support",
+                            ),
                             (
                                 "1",
                                 "I <B>cannot</B> have <B>any</B> love, friendship and support",
@@ -385,11 +399,17 @@ class Migration(migrations.Migration):
                         verbose_name="Enjoyment and pleasure",
                     ),
                 ),
-                ("report_datetime", models.DateTimeField(default=edc_utils.date.get_utcnow)),
+                (
+                    "report_datetime",
+                    models.DateTimeField(default=edc_utils.date.get_utcnow),
+                ),
                 (
                     "history_id",
                     models.UUIDField(
-                        default=uuid.uuid4, editable=False, primary_key=True, serialize=False
+                        default=uuid.uuid4,
+                        editable=False,
+                        primary_key=True,
+                        serialize=False,
                     ),
                 ),
                 ("history_date", models.DateTimeField(db_index=True)),

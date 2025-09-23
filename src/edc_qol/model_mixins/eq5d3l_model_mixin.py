@@ -14,9 +14,13 @@ from ..choices import (
 
 
 class Eq5d3lModelMixin(models.Model):
-    mobility = models.CharField(verbose_name="Mobility", max_length=45, choices=MOBILITY)
+    mobility = models.CharField(
+        verbose_name="Mobility", max_length=45, choices=MOBILITY
+    )
 
-    self_care = models.CharField(verbose_name="Self-care", max_length=45, choices=SELF_CARE)
+    self_care = models.CharField(
+        verbose_name="Self-care", max_length=45, choices=SELF_CARE
+    )
 
     usual_activities = models.CharField(
         verbose_name=_("Usual activities"),
@@ -30,7 +34,9 @@ class Eq5d3lModelMixin(models.Model):
     )
 
     anxiety_depression = models.CharField(
-        verbose_name=_("Anxiety / Depression"), max_length=45, choices=ANXIETY_DEPRESSION
+        verbose_name=_("Anxiety / Depression"),
+        max_length=45,
+        choices=ANXIETY_DEPRESSION,
     )
 
     health_today_score_slider = models.CharField(

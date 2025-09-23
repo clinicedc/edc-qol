@@ -9,5 +9,7 @@ from ..models import Eq5d3l
 
 
 @admin.register(Eq5d3l, site=edc_qol_admin)
-class Eq5d3lAdmin(Eq5d3lModelAdminMixin, ModelAdminSubjectDashboardMixin, SimpleHistoryAdmin):
+class Eq5d3lAdmin(
+    Eq5d3lModelAdminMixin, ModelAdminSubjectDashboardMixin, SimpleHistoryAdmin
+):
     form = Eq5d3lForm

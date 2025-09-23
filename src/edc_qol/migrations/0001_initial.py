@@ -8,12 +8,13 @@ import django.db.models.deletion
 import django_audit_fields.fields.hostname_modification_field
 import django_audit_fields.fields.userfield
 import django_audit_fields.fields.uuid_auto_field
-import django_audit_fields.models.audit_model_mixin
 import django_revision.revision_field
 import edc_sites.models
 import edc_utils.date
 import simple_history.models
 import uuid
+
+from django.utils import timezone
 
 
 class Migration(migrations.Migration):
@@ -41,15 +42,11 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "created",
-                    models.DateTimeField(
-                        blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
-                    ),
+                    models.DateTimeField(blank=True, default=timezone.now),
                 ),
                 (
                     "modified",
-                    models.DateTimeField(
-                        blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
-                    ),
+                    models.DateTimeField(blank=True, default=timezone.now),
                 ),
                 (
                     "user_created",
@@ -102,7 +99,10 @@ class Migration(migrations.Migration):
                     "mobility",
                     models.CharField(
                         choices=[
-                            ("no_problems_in_walking", "I have no problems in walking about"),
+                            (
+                                "no_problems_in_walking",
+                                "I have no problems in walking about",
+                            ),
                             (
                                 "some_problems_in_walking",
                                 "I have some problems in walking about",
@@ -161,8 +161,14 @@ class Migration(migrations.Migration):
                     models.CharField(
                         choices=[
                             ("no_pain_discomfort", "I have no pain or discomfort"),
-                            ("moderate_pain_discomfort", "I have moderate pain or discomfort"),
-                            ("extreme_pain_discomfort", "I have extreme pain or discomfort"),
+                            (
+                                "moderate_pain_discomfort",
+                                "I have moderate pain or discomfort",
+                            ),
+                            (
+                                "extreme_pain_discomfort",
+                                "I have extreme pain or discomfort",
+                            ),
                         ],
                         max_length=45,
                         verbose_name="Pain / Discomfort",
@@ -189,7 +195,8 @@ class Migration(migrations.Migration):
                 (
                     "health_today_score_slider",
                     models.CharField(
-                        max_length=3, verbose_name="Visual score for how your health is TODAY"
+                        max_length=3,
+                        verbose_name="Visual score for how your health is TODAY",
                     ),
                 ),
                 (
@@ -203,11 +210,17 @@ class Migration(migrations.Migration):
                         verbose_name="<B><font color='orange'>Interviewer</font></B>: please confirm the number on the scale indicated from above.",
                     ),
                 ),
-                ("report_datetime", models.DateTimeField(default=edc_utils.date.get_utcnow)),
+                (
+                    "report_datetime",
+                    models.DateTimeField(default=edc_utils.date.get_utcnow),
+                ),
                 (
                     "history_id",
                     models.UUIDField(
-                        default=uuid.uuid4, editable=False, primary_key=True, serialize=False
+                        default=uuid.uuid4,
+                        editable=False,
+                        primary_key=True,
+                        serialize=False,
                     ),
                 ),
                 ("history_date", models.DateTimeField()),
@@ -264,15 +277,11 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "created",
-                    models.DateTimeField(
-                        blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
-                    ),
+                    models.DateTimeField(blank=True, default=timezone.now),
                 ),
                 (
                     "modified",
-                    models.DateTimeField(
-                        blank=True, default=django_audit_fields.models.audit_model_mixin.utcnow
-                    ),
+                    models.DateTimeField(blank=True, default=timezone.now),
                 ),
                 (
                     "user_created",
@@ -326,7 +335,10 @@ class Migration(migrations.Migration):
                     "mobility",
                     models.CharField(
                         choices=[
-                            ("no_problems_in_walking", "I have no problems in walking about"),
+                            (
+                                "no_problems_in_walking",
+                                "I have no problems in walking about",
+                            ),
                             (
                                 "some_problems_in_walking",
                                 "I have some problems in walking about",
@@ -385,8 +397,14 @@ class Migration(migrations.Migration):
                     models.CharField(
                         choices=[
                             ("no_pain_discomfort", "I have no pain or discomfort"),
-                            ("moderate_pain_discomfort", "I have moderate pain or discomfort"),
-                            ("extreme_pain_discomfort", "I have extreme pain or discomfort"),
+                            (
+                                "moderate_pain_discomfort",
+                                "I have moderate pain or discomfort",
+                            ),
+                            (
+                                "extreme_pain_discomfort",
+                                "I have extreme pain or discomfort",
+                            ),
                         ],
                         max_length=45,
                         verbose_name="Pain / Discomfort",
@@ -413,7 +431,8 @@ class Migration(migrations.Migration):
                 (
                     "health_today_score_slider",
                     models.CharField(
-                        max_length=3, verbose_name="Visual score for how your health is TODAY"
+                        max_length=3,
+                        verbose_name="Visual score for how your health is TODAY",
                     ),
                 ),
                 (
@@ -427,7 +446,10 @@ class Migration(migrations.Migration):
                         verbose_name="<B><font color='orange'>Interviewer</font></B>: please confirm the number on the scale indicated from above.",
                     ),
                 ),
-                ("report_datetime", models.DateTimeField(default=edc_utils.date.get_utcnow)),
+                (
+                    "report_datetime",
+                    models.DateTimeField(default=edc_utils.date.get_utcnow),
+                ),
                 (
                     "site",
                     models.ForeignKey(
@@ -445,7 +467,14 @@ class Migration(migrations.Migration):
                 "ordering": ("-modified", "-created"),
                 "get_latest_by": "modified",
                 "abstract": False,
-                "default_permissions": ("add", "change", "delete", "view", "export", "import"),
+                "default_permissions": (
+                    "add",
+                    "change",
+                    "delete",
+                    "view",
+                    "export",
+                    "import",
+                ),
             },
             managers=[
                 ("on_site", edc_sites.models.CurrentSiteManager()),

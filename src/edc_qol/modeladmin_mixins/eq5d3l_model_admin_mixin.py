@@ -38,7 +38,8 @@ def eq5d3l_fieldsets():
             "How is your health TODAY?",
             {
                 "description": format_html(
-                    "{}", mark_safe(eq5d3l_description)  # nosec B308, B703
+                    "{}",
+                    mark_safe(eq5d3l_description),  # nosec B308, B703
                 ),
                 "fields": (
                     "health_today_score_slider",
