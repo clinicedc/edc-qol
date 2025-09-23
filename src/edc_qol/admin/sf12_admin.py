@@ -66,7 +66,8 @@ def sf12_fieldsets():
             "Part 2: Activities limited by health",
             {
                 "description": format_html(
-                    "{}", mark_safe(part2_description)  # nosec B308, B703
+                    "{}",
+                    mark_safe(part2_description),  # nosec B308, B703
                 ),
                 "fields": (
                     "moderate_activities_now_limited",
@@ -78,7 +79,8 @@ def sf12_fieldsets():
             "Part 3: Physical health problems (last 4 weeks)",
             {
                 "description": format_html(
-                    "{}", mark_safe(part3_description)  # nosec B308, B703
+                    "{}",
+                    mark_safe(part3_description),  # nosec B308, B703
                 ),
                 "fields": (
                     "accomplished_less_physical_health",
@@ -90,7 +92,8 @@ def sf12_fieldsets():
             "Part 4: Emotional problems (last 4 weeks)",
             {
                 "description": format_html(
-                    "{}", mark_safe(part4_description)  # nosec B308, B703
+                    "{}",
+                    mark_safe(part4_description),  # nosec B308, B703
                 ),
                 "fields": (
                     "accomplished_less_emotional",
@@ -106,7 +109,8 @@ def sf12_fieldsets():
             "Part 6: Feeling (last 4 weeks)",
             {
                 "description": format_html(
-                    "{}", mark_safe(part6_description)  # nosec B308, B703
+                    "{}",
+                    mark_safe(part6_description),  # nosec B308, B703
                 ),
                 "fields": (
                     "felt_calm_peaceful",

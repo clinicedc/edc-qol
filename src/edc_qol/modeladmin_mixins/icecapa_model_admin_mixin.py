@@ -13,7 +13,13 @@ def icecapa_fieldsets():
                     "of life at the moment by selecting ONE option for each of the five "
                     "questions below."
                 ),
-                "fields": ("stability", "attachment", "autonomy", "achievement", "enjoyment"),
+                "fields": (
+                    "stability",
+                    "attachment",
+                    "autonomy",
+                    "achievement",
+                    "enjoyment",
+                ),
             },
         ),
     ]

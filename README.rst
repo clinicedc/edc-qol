@@ -1,4 +1,4 @@
-|pypi| |actions| |codecov| |downloads|
+|pypi| |actions| |codecov| |downloads| |clinicedc|
 
 edc-qol
 --------
@@ -37,3 +37,7 @@ See also:
 
 .. |downloads| image:: https://pepy.tech/badge/edc-qol
     :target: https://pepy.tech/project/edc-qol
+
+.. |clinicedc| image:: https://img.shields.io/badge/framework-Clinic_EDC-green
+   :alt:Made with clinicedc
+   :target: https://github.com/clinicedc

@@ -72,7 +72,10 @@ SELF_CARE = (
 )
 
 USUAL_ACTIVITIES = (
-    (NO_PROBLEM_USUAL_ACTIVITIES, _("I have no problems with performing my usual activities")),
+    (
+        NO_PROBLEM_USUAL_ACTIVITIES,
+        _("I have no problems with performing my usual activities"),
+    ),
     (
         SOME_PROBLEM_USUAL_ACTIVITIES,
         _("I have some problems with performing my usual activities"),
@@ -115,7 +118,9 @@ ICECAP_STABILITY = (
         format_html_lazy(
             "{}",
             mark_safe(
-                _("I am able to feel settled and secure in <B>many</B> areas of my life")
+                _(
+                    "I am able to feel settled and secure in <B>many</B> areas of my life"
+                )
             ),  # nosec B703, B308
         ),
     ),
@@ -124,7 +129,9 @@ ICECAP_STABILITY = (
         format_html_lazy(
             "{}",
             mark_safe(
-                _("I am able to feel settled and secure in a <B>few</B> areas of my life")
+                _(
+                    "I am able to feel settled and secure in a <B>few</B> areas of my life"
+                )
             ),  # nosec B703, B308
         ),
     ),
@@ -148,9 +155,7 @@ ICECAP_ATTACHMENT = (
         "4",
         format_html_lazy(
             "{}",
-            mark_safe(
-                _("I can have <B>a lot</B> of love, friendship and support")
-            ),  # nosec B703, B308
+            mark_safe(_("I can have <B>a lot</B> of love, friendship and support")),  # nosec B703, B308
         ),
     ),
     (
@@ -166,9 +171,7 @@ ICECAP_ATTACHMENT = (
         "2",
         format_html_lazy(
             "{}",
-            mark_safe(
-                _("I can have <B>a little</B> love, friendship and support")
-            ),  # nosec B703, B308
+            mark_safe(_("I can have <B>a little</B> love, friendship and support")),  # nosec B703, B308
         ),
     ),
     (
@@ -195,18 +198,14 @@ ICECAP_AUTONOMY = (
         "3",
         format_html_lazy(
             "{}",
-            mark_safe(
-                _("I am able to be independent in <B>many</B> things")
-            ),  # nosec B703, B308
+            mark_safe(_("I am able to be independent in <B>many</B> things")),  # nosec B703, B308
         ),
     ),
     (
         "2",
         format_html_lazy(
             "{}",
-            mark_safe(
-                _("I am able to be independent in <B>a few</B> things")
-            ),  # nosec B703, B308
+            mark_safe(_("I am able to be independent in <B>a few</B> things")),  # nosec B703, B308
         ),
     ),
     (
@@ -223,9 +222,7 @@ ICECAP_ACHIEVMENT = (
         "4",
         format_html_lazy(
             "{}",
-            mark_safe(
-                _("I can achieve and progress in <B>all</B> aspects of my life")
-            ),  # nosec B703, B308
+            mark_safe(_("I can achieve and progress in <B>all</B> aspects of my life")),  # nosec B703, B308
         ),
     ),
     (
@@ -265,36 +262,28 @@ ICECAP_ENJOYMENT = (
         "4",
         format_html_lazy(
             "{}",
-            mark_safe(
-                _("I can have <B>a lot</B> of enjoyment and pleasure")
-            ),  # nosec B703, B308
+            mark_safe(_("I can have <B>a lot</B> of enjoyment and pleasure")),  # nosec B703, B308
         ),
     ),
     (
         "3",
         format_html_lazy(
             "{}",
-            mark_safe(
-                _("I can have <B>quite a lot</B> of enjoyment and pleasure")
-            ),  # nosec B703, B308
+            mark_safe(_("I can have <B>quite a lot</B> of enjoyment and pleasure")),  # nosec B703, B308
         ),
     ),
     (
         "2",
         format_html_lazy(
             "{}",
-            mark_safe(
-                _("I can have <B>a little</B> enjoyment and pleasure")
-            ),  # nosec B703, B308
+            mark_safe(_("I can have <B>a little</B> enjoyment and pleasure")),  # nosec B703, B308
         ),
     ),
     (
         "1",
         format_html_lazy(
             "{}",
-            mark_safe(
-                _("I <B>cannot</B> have <B>any</B> enjoyment and pleasure")
-            ),  # nosec B703, B308
+            mark_safe(_("I <B>cannot</B> have <B>any</B> enjoyment and pleasure")),  # nosec B703, B308
         ),
     ),
 )
