@@ -12,16 +12,12 @@ class Eq5d3lFormValidator(CrfFormValidator):
 
     def confirm_scores_match(self):
         confirmed = self.cleaned_data.get("health_today_score_confirmed")
-        if confirmed is not None:
-            if (
-                int(self.cleaned_data.get("health_today_score_slider", "0"))
-                != confirmed
-            ):
-                raise forms.ValidationError(
-                    {
-                        "health_today_score_confirmed": "Does not match visual scale above."
-                    }
-                )
+        if confirmed is not None and int(
+            self.cleaned_data.get("health_today_score_slider", "0") != confirmed
+        ):
+            raise forms.ValidationError(
+                {"health_today_score_confirmed": "Does not match visual scale above."}
+            )
 
 
 class Eq5d3lForm(CrfModelFormMixin, forms.ModelForm):

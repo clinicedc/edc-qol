@@ -9,12 +9,11 @@ from .icecapa_model_admin_mixin import (
     icecapa_radio_fields,
 )
 
-
 __all__ = [
     "Eq5d3lModelAdminMixin",
+    "IcecapaModelAdminMixin",
     "eq5d3l_fieldsets",
     "eq5d3l_radio_fields",
-    "IcecapaModelAdminMixin",
     "icecapa_fieldsets",
     "icecapa_radio_fields",
 ]

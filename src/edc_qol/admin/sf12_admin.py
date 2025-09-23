@@ -67,7 +67,7 @@ def sf12_fieldsets():
             {
                 "description": format_html(
                     "{}",
-                    mark_safe(part2_description),  # nosec B308, B703
+                    mark_safe(part2_description),  # nosec B308, B703  # noqa: S308
                 ),
                 "fields": (
                     "moderate_activities_now_limited",
@@ -80,7 +80,7 @@ def sf12_fieldsets():
             {
                 "description": format_html(
                     "{}",
-                    mark_safe(part3_description),  # nosec B308, B703
+                    mark_safe(part3_description),  # nosec B308, B703  # noqa: S308
                 ),
                 "fields": (
                     "accomplished_less_physical_health",
@@ -93,7 +93,7 @@ def sf12_fieldsets():
             {
                 "description": format_html(
                     "{}",
-                    mark_safe(part4_description),  # nosec B308, B703
+                    mark_safe(part4_description),  # nosec B308, B703  # noqa: S308
                 ),
                 "fields": (
                     "accomplished_less_emotional",
@@ -110,7 +110,7 @@ def sf12_fieldsets():
             {
                 "description": format_html(
                     "{}",
-                    mark_safe(part6_description),  # nosec B308, B703
+                    mark_safe(part6_description),  # nosec B308, B703  # noqa: S308
                 ),
                 "fields": (
                     "felt_calm_peaceful",

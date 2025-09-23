@@ -23,7 +23,7 @@ class Sf12ModelMixin(models.Model):
     moderate_activities_now_limited = models.CharField(
         verbose_name=format_html(
             "{}",
-            mark_safe(  # nosec B308, B703
+            mark_safe(  # nosec B308, B703  # noqa: S308
                 _(
                     "<u>Moderate activities</u> such as moving a table, "
                     "pushing a vacuum cleaner, bowling, or playing golf:"
@@ -37,7 +37,7 @@ class Sf12ModelMixin(models.Model):
     climbing_stairs_now_limited = models.CharField(
         verbose_name=format_html(
             "{}",
-            mark_safe(_("Climbing <u>several</u> flights of stairs:")),  # nosec B308, B703
+            mark_safe(_("Climbing <u>several</u> flights of stairs:")),  # nosec B308, B703  # noqa: S308
         ),
         max_length=20,
         choices=HEALTH_LIMITED_CHOICES,
@@ -46,7 +46,7 @@ class Sf12ModelMixin(models.Model):
     accomplished_less_physical_health = models.CharField(
         verbose_name=format_html(
             "{}",
-            mark_safe(_("<u>Accomplished less</u> than you would like:")),  # nosec B308, B703
+            mark_safe(_("<u>Accomplished less</u> than you would like:")),  # nosec B308, B703  # noqa: S308
         ),
         max_length=15,
         choices=YES_NO,
@@ -55,7 +55,7 @@ class Sf12ModelMixin(models.Model):
     work_limited_physical_health = models.CharField(
         verbose_name=format_html(
             "{}",
-            mark_safe(  # nosec B308, B703
+            mark_safe(  # nosec B308, B703  # noqa: S308
                 _("Were limited in the <u>kind</u> of work or other activities:")
             ),
         ),
@@ -66,7 +66,7 @@ class Sf12ModelMixin(models.Model):
     accomplished_less_emotional = models.CharField(
         verbose_name=format_html(
             "{}",
-            mark_safe(_("<u>Accomplished less</u> than you would like:")),  # nosec B308, B703
+            mark_safe(_("<u>Accomplished less</u> than you would like:")),  # nosec B308, B703  # noqa: S308
         ),
         max_length=15,
         choices=YES_NO,
@@ -75,7 +75,7 @@ class Sf12ModelMixin(models.Model):
     work_less_carefully_emotional = models.CharField(
         verbose_name=format_html(
             "{}",
-            mark_safe(  # nosec B308, B703
+            mark_safe(  # nosec B308, B703  # noqa: S308
                 _("Did work or activities <u>less carefully than usual</u>:")
             ),
         ),
@@ -86,7 +86,7 @@ class Sf12ModelMixin(models.Model):
     pain_interfere_work = models.CharField(
         verbose_name=format_html(
             "{}",
-            mark_safe(  # nosec B308, B703
+            mark_safe(  # nosec B308, B703  # noqa: S308
                 _(
                     "During the <u>past 4 weeks</u>, how much <u>did pain interfere</u> "
                     "with your normal work (including work outside the home and housework)?"
@@ -118,7 +118,7 @@ class Sf12ModelMixin(models.Model):
     social_activities_interfered = models.CharField(
         verbose_name=format_html(
             "{}",
-            mark_safe(  # nosec B308, B703
+            mark_safe(  # nosec B308, B703  # noqa: S308
                 _(
                     "During the <u>past 4 weeks</u>, how much of the time has your physical "
                     "health or emotional problems interfered with your social "

@@ -14,13 +14,9 @@ from ..choices import (
 
 
 class Eq5d3lModelMixin(models.Model):
-    mobility = models.CharField(
-        verbose_name="Mobility", max_length=45, choices=MOBILITY
-    )
+    mobility = models.CharField(verbose_name="Mobility", max_length=45, choices=MOBILITY)
 
-    self_care = models.CharField(
-        verbose_name="Self-care", max_length=45, choices=SELF_CARE
-    )
+    self_care = models.CharField(verbose_name="Self-care", max_length=45, choices=SELF_CARE)
 
     usual_activities = models.CharField(
         verbose_name=_("Usual activities"),
@@ -47,7 +43,7 @@ class Eq5d3lModelMixin(models.Model):
     health_today_score_confirmed = models.IntegerField(
         verbose_name=format_html(
             "{}",
-            mark_safe(
+            mark_safe(  # noqa: S308
                 _(
                     "<B><font color='orange'>Interviewer</font></B>: "
                     "please confirm the number on the scale indicated from above."
@@ -57,7 +53,7 @@ class Eq5d3lModelMixin(models.Model):
         validators=[MinValueValidator(0), MaxValueValidator(100)],
         help_text=format_html(
             "{}",
-            mark_safe(
+            mark_safe(  # noqa: S308
                 _(
                     "This scale is numbered from 0 to 100. "
                     "100 means the <U>best</U> health you can imagine"

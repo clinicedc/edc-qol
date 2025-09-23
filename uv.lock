@@ -548,6 +548,56 @@ test = [
 ]
 
 [[package]]
+name = "clinicedc-tests"
+version = "0.1.6"
+source = { editable = "../clinicedc-tests" }
+dependencies = [
+    { name = "faker" },
+    { name = "model-bakery" },
+    { name = "time-machine" },
+    { name = "tox-uv" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "faker", specifier = ">=37.4.2" },
+    { name = "model-bakery", specifier = ">=1.20.5" },
+    { name = "time-machine", specifier = ">=2.16.0" },
+    { name = "tox-uv", specifier = ">=1.26.2" },
+]
+
+[package.metadata.requires-dev]
+develop = [
+    { name = "argon2-cffi" },
+    { name = "clinicedc", editable = "../clinicedc" },
+    { name = "django-admin-rangefilter" },
+    { name = "django-audit-fields", editable = "../django-audit-fields" },
+    { name = "django-crypto-fields", editable = "../django-crypto-fields" },
+    { name = "django-db-views" },
+    { name = "django-environ" },
+    { name = "django-logentry-admin" },
+    { name = "django-multisite2", editable = "../django-multisite2" },
+    { name = "django-pandas" },
+    { name = "django-revision", editable = "../django-revision" },
+    { name = "django-simple-history" },
+    { name = "django-storages" },
+    { name = "fontawesomefree" },
+    { name = "ipython", specifier = ">=9.5.0" },
+    { name = "python-memcached" },
+]
+docs = [
+    { name = "furo", specifier = ">=2025.7.19" },
+    { name = "sphinx", specifier = ">=8.2.3" },
+    { name = "sphinx-design", specifier = ">=0.6.1" },
+    { name = "sphinx-inline-tabs", specifier = ">=2023.4.21" },
+]
+lint = [
+    { name = "black", specifier = ">=25.1.0" },
+    { name = "isort", specifier = "==5.13.2" },
+    { name = "ruff", specifier = ">=0.12.5" },
+]
+
+[[package]]
 name = "colorama"
 version = "0.4.6"
 source = { registry = "https://pypi.org/simple" }
@@ -958,7 +1008,7 @@ wheels = [
 
 [[package]]
 name = "edc-qol"
-version = "1.1.1"
+version = "1.1.2"
 source = { editable = "." }
 dependencies = [
     { name = "clinicedc" },
@@ -975,6 +1025,7 @@ lint = [
     { name = "ruff" },
 ]
 test = [
+    { name = "clinicedc-tests" },
     { name = "coverage" },
     { name = "edc-test-settings" },
     { name = "faker" },
@@ -996,6 +1047,7 @@ docs = [
 ]
 lint = [{ name = "ruff", specifier = ">=0.12.5" }]
 test = [
+    { name = "clinicedc-tests", editable = "../clinicedc-tests" },
     { name = "coverage", specifier = ">=7.10.1" },
     { name = "edc-test-settings", editable = "../edc-test-settings" },
     { name = "faker", specifier = ">=37.4.2" },
