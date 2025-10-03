@@ -9,7 +9,7 @@ namespace = false
 
 [project]
 name = "edc-qol"
-version = "1.2.0"
+version = "1.2.1"
 description = "Quality of Life instrument forms/models for the clinicedc/edc and other django projects"
 readme = {file = "README.rst", content-type = "text/x-rst"}
 license = "GPL-3.0-or-later"
@@ -39,9 +39,7 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
 ]
-dependencies = [
-    "clinicedc>=2.0.26",
-]
+dependencies = ["clinicedc>=2.0.26"]
 
 [project.urls]
 Homepage = "https://github.com/clinicedc/edc-qol"

@@ -1,6 +1,5 @@
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
-from django.utils.html import format_html
 from django.utils.safestring import mark_safe
 from django.utils.translation import gettext as _
 
@@ -41,25 +40,19 @@ class Eq5d3lModelMixin(models.Model):
     )
 
     health_today_score_confirmed = models.IntegerField(
-        verbose_name=format_html(
-            "{}",
-            mark_safe(  # noqa: S308
-                _(
-                    "<B><font color='orange'>Interviewer</font></B>: "
-                    "please confirm the number on the scale indicated from above."
-                )
-            ),  # nosec B308, B703
+        verbose_name=mark_safe(  # noqa: S308
+            _(
+                "<B><font color='orange'>Interviewer</font></B>: "
+                "please confirm the number on the scale indicated from above."
+            )
         ),
         validators=[MinValueValidator(0), MaxValueValidator(100)],
-        help_text=format_html(
-            "{}",
-            mark_safe(  # noqa: S308
-                _(
-                    "This scale is numbered from 0 to 100. "
-                    "100 means the <U>best</U> health you can imagine"
-                    "0 means the <U>worst</U> health you can imagine."
-                )
-            ),  # nosec B308, B703
+        help_text=mark_safe(  # noqa: S308
+            _(
+                "This scale is numbered from 0 to 100. "
+                "100 means the <U>best</U> health you can imagine"
+                "0 means the <U>worst</U> health you can imagine."
+            )
         ),
     )
 
