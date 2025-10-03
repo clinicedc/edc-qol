@@ -39,9 +39,7 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
 ]
-dependencies = [
-    "clinicedc>=2.0.26",
-]
+dependencies = ["clinicedc>=2.0.26"]
 
 [project.urls]
 Homepage = "https://github.com/clinicedc/edc-qol"
