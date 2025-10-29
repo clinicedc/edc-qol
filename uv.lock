@@ -406,7 +406,7 @@ wheels = [
 
 [[package]]
 name = "clinicedc"
-version = "2.0.32"
+version = "2.0.41"
 source = { editable = "../clinicedc" }
 dependencies = [
     { name = "argon2-cffi" },
@@ -414,6 +414,8 @@ dependencies = [
     { name = "beautifulsoup4" },
     { name = "boto3" },
     { name = "celery" },
+    { name = "clinicedc-constants" },
+    { name = "clinicedc-utils" },
     { name = "cryptography" },
     { name = "django" },
     { name = "django-admin-rangefilter" },
@@ -456,6 +458,8 @@ requires-dist = [
     { name = "beautifulsoup4", specifier = ">=4.13.5" },
     { name = "boto3", specifier = ">=1.39.16" },
     { name = "celery", specifier = ">=5.5.3" },
+    { name = "clinicedc-constants", specifier = ">=1.1.0" },
+    { name = "clinicedc-utils", editable = "../clinicedc-utils" },
     { name = "cryptography", specifier = ">=45.0.7" },
     { name = "django", specifier = ">=5.2.4" },
     { name = "django-admin-rangefilter", specifier = ">=0.13.3" },
@@ -548,6 +552,15 @@ test = [
 ]
 
 [[package]]
+name = "clinicedc-constants"
+version = "1.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/c1/80/483a69809d7f7678d575cd4b35b7ed614abe381e525073db7c8064da9d27/clinicedc_constants-1.1.0.tar.gz", hash = "sha256:1e1dc01ad78d56d33bb7cff13450867f39c438f35a18621b8858c3a421fbce15", size = 5997, upload-time = "2025-10-28T21:47:37.693Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/94/ba/0172a5973c056c937e75ec9e0ace1f27238f18b46aa4d5e1219d674068b5/clinicedc_constants-1.1.0-py3-none-any.whl", hash = "sha256:464c98bae3cfad362d431034aef81a0e0419bc7bc5789a55f6b72450811aad96", size = 7690, upload-time = "2025-10-28T21:47:36.725Z" },
+]
+
+[[package]]
 name = "clinicedc-tests"
 version = "0.2.0"
 source = { editable = "../clinicedc-tests" }
@@ -598,6 +611,17 @@ lint = [
     { name = "isort", specifier = "==5.13.2" },
     { name = "ruff", specifier = ">=0.12.5" },
 ]
+
+[[package]]
+name = "clinicedc-utils"
+version = "0.4.0"
+source = { editable = "../clinicedc-utils" }
+dependencies = [
+    { name = "clinicedc-constants" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "clinicedc-constants", specifier = ">=1.0.1" }]
 
 [[package]]
 name = "colorama"
