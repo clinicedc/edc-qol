@@ -116,6 +116,7 @@ exclude_lines = [
 
 [dependency-groups]
 dev = [
+    "clinicedc>=2.1.1",
     "clinicedc-tests>=1.0.0",
 ]
 lint = [
