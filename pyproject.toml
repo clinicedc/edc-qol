@@ -132,5 +132,5 @@ docs = [
 [tool.uv.sources]
 edc-qol = { workspace = true }
 clinicedc = { path = "../clinicedc", editable = true }
-clinicedc-tests = { path = "../clinicedc-tests", editable = true }
-edc-test-settings = { path = "../edc-test-settings", editable = true }
+# clinicedc-tests = { path = "../clinicedc-tests", editable = true }
+# edc-test-settings = { path = "../edc-test-settings", editable = true }
