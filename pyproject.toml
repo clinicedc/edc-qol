@@ -30,7 +30,7 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
 ]
 requires-python = ">=3.12,<3.14"
-dependencies = ["clinicedc>=2.1.0"]
+dependencies = []
 
 [project.urls]
 Homepage = "https://github.com/clinicedc/edc-qol"
@@ -115,26 +115,17 @@ exclude_lines = [
 ]
 
 [dependency-groups]
+dev = [
+    "clinicedc-tests>=1.0.0",
+]
 lint = [
     "ruff>=0.12.5",
 ]
-
 docs = [
     "furo>=2025.7.19",
     "sphinx>=8.2.3",
     "sphinx-design>=0.6.1",
     "sphinx-inline-tabs>=2023.4.21",
-]
-
-test = [
-    "coverage>=7.10.1",
-    "tox-uv>=1.26.2",
-    "faker>=37.4.2",
-    "model-bakery>=1.20.5",
-    "time-machine>=2.16.0",
-    "tqdm>=4.67.1",
-    "edc-test-settings>=2.0.0",
-    "clinicedc-tests>=0.3.0",
 ]
 
 [tool.uv.sources]

@@ -16,7 +16,7 @@ See:
 
 See also:
 
-* https://github.com/clinicedc/edc
+* https://github.com/clinicedc/clinicedc
 * https://github.com/meta-trial/meta-edc
 
 
