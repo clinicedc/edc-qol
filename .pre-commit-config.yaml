@@ -2,11 +2,11 @@
 exclude: tests/etc/user-*
 
 repos:
-
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
       - id: check-added-large-files
+        args: ['--maxkb=1100']
       - id: check-docstring-first
       - id: check-executables-have-shebangs
       - id: check-merge-conflict
@@ -15,10 +15,17 @@ repos:
       - id: debug-statements
       - id: detect-private-key
       - id: end-of-file-fixer
+        exclude: '(?i:^.*\.lbl$)'
       - id: fix-byte-order-marker
       - id: requirements-txt-fixer
         files: requirements/.*\.txt$
       - id: trailing-whitespace
+
+  - repo: https://github.com/rstcheck/rstcheck
+    rev: v6.2.5
+    hooks:
+      - id: rstcheck
+        additional_dependencies: ['rstcheck[sphinx,toml]']
 
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.37.1
@@ -27,11 +34,10 @@ repos:
         args:
           - "--strict"
 
-  - repo: https://github.com/rstcheck/rstcheck
-    rev: v6.2.5
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.8.1
     hooks:
-      - id: rstcheck
-        additional_dependencies: ['rstcheck[sphinx,toml]']
+      - id: nbstripout
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.13.0
