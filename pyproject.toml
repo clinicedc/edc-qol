@@ -1,6 +1,6 @@
 [project]
 name = "edc-qol"
-version = "1.4.0"
+version = "1.4.1"
 description = "Quality of Life instrument forms/models for the clinicedc/edc and other django projects"
 readme = { file = "README.rst", content-type = "text/x-rst" }
 license = "GPL-3.0-or-later"
