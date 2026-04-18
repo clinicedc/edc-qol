@@ -6,7 +6,7 @@ on: [push, pull_request]
 jobs:
   build:
     name: |
-      build (Python ${{ matrix.python-version }}, Django ${{ matrix.django-version }}, ${{ matrix.database-engine }})
+      build (Python ${{matrix.python-version}}, Django ${{matrix.django-version}}, ${{matrix.database-engine}})
     runs-on: ubuntu-latest
 
     strategy:
@@ -49,7 +49,7 @@ jobs:
       - name: Install uv and set the python version
         uses: astral-sh/setup-uv@v6
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: ${{matrix.python-version}}
           enable-cache: true
 
       - name: Install tox
@@ -57,15 +57,15 @@ jobs:
           uv tool install tox --with tox-uv
 
       - name: Verify tox plugins
-        run: uv run --active --no-sources tox --version
+        run: uv run --dev --no-sources tox --version
 
       - name: Tox tests
         run: |
-          uv run --active --no-sources tox
+          uv run --dev --no-sources tox
         env:
-          DJANGO: ${{ matrix.django-version }}
+          DJANGO: ${{matrix.django-version}}
 
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@v3
         with:
-          name: Python ${{ matrix.python-version }}
+          name: Python ${{matrix.python-version}}
