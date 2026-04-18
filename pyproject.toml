@@ -1,8 +1,8 @@
 [project]
 name = "edc-qol"
-version = "1.4.0"
+version = "1.4.1"
 description = "Quality of Life instrument forms/models for the clinicedc/edc and other django projects"
-readme = {file = "README.rst", content-type = "text/x-rst"}
+readme = { file = "README.rst", content-type = "text/x-rst" }
 license = "GPL-3.0-or-later"
 license-files = ["LICEN[CS]E*"]
 authors = [
@@ -30,7 +30,9 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
 ]
 requires-python = ">=3.12,<3.14"
-dependencies = []
+dependencies = [
+    "clinicedc>=2.9.4",
+]
 
 [project.urls]
 Homepage = "https://github.com/clinicedc/edc-qol"
@@ -86,7 +88,7 @@ select = [
 ignore = ["DJ008", "DJ007", "DJ006", "COM812", "PLC0206", "PLR2004", "TRY003"]
 
 [tool.ruff.lint.per-file-ignores]
-    "__init__.py" = ["F401"]
+"__init__.py" = ["F401"]
 
 [tool.ruff.lint.mccabe]
 max-complexity = 12
@@ -110,8 +112,8 @@ show_missing = true
 skip_covered = true
 omit = ["requirements.txt", "*/migrations/*"]
 exclude_lines = [
-  "pragma: no cover",
-  "if TYPE_CHECKING:",
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
 ]
 
 [dependency-groups]
@@ -132,4 +134,4 @@ docs = [
 edc-qol = { workspace = true }
 clinicedc = { path = "../clinicedc", editable = true }
 clinicedc-tests = { path = "../clinicedc-tests", editable = true }
-edc-test-settings = { path = "../edc-test-settings", editable = true }
+# edc-test-settings = { path = "../edc-test-settings", editable = true }
