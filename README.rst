@@ -8,6 +8,7 @@ Django classes for Quality of Life instruments.
 Includes:
 
 * EQ-5D-3L Instrument
+* ICECAP-A: Quality of Life
 * SF-12 Health Survey
 
 See:
